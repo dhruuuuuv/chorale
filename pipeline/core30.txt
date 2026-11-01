@@ -1,0 +1,40 @@
+# The hand-checked core 30 for phase 1.
+# Tab-separated: corpus id, Riemenschneider, title, English translation of the German first line, source work, start-here order (blank if not on the shelf)
+#
+# Riemenschneider 1-20 have hand-made Roman-numeral analyses in the music21 corpus.
+# Three of them are left out because the corpus file is unusable for phase 1:
+#   6  (BWV 281, Humdrum file with no lyrics), 11 (BWV 41.6, instrumental parts, no lyrics),
+#   15 (BWV 277, Humdrum file with no lyrics).
+# Thirteen well-known chorales make up the 30.
+#
+# Translations are literal, line for line, written for this project.
+244.54	74	O Haupt voll Blut und Wunden	O head, full of blood and wounds	St Matthew Passion, BWV 244	1
+81.7	324	Jesu, meine Freude	Jesus, my joy	Cantata BWV 81, Jesus schläft, was soll ich hoffen?	2
+140.7	179	Wachet auf, ruft uns die Stimme	Wake up, the voice calls to us	Cantata BWV 140, Wachet auf, ruft uns die Stimme	3
+302	20	Ein’ feste Burg ist unser Gott	A mighty fortress is our God	Four-part chorales, BWV 253–438	4
+386	32	Nun danket alle Gott	Now all thank God	Four-part chorales, BWV 253–438	5
+269	1	Aus meines Herzens Grunde	From the depths of my heart	Four-part chorales, BWV 253–438
+347	2	Ich dank’ dir, lieber Herre	I thank you, dear Lord	Four-part chorales, BWV 253–438
+153.1	3	Ach Gott, vom Himmel sieh’ darein	O God, look down from heaven	Cantata BWV 153, Schau, lieber Gott, wie meine Feind
+86.6	4	Es ist das Heil uns kommen her	Salvation has come to us	Cantata BWV 86, Wahrlich, wahrlich, ich sage euch
+267	5	An Wasserflüssen Babylon	By the waters of Babylon	Four-part chorales, BWV 253–438
+17.7	7	Nun lob’, mein’ Seel’, den Herren	Now praise the Lord, my soul	Cantata BWV 17, Wer Dank opfert, der preiset mich
+40.8	8	Freuet euch, ihr Christen alle	Rejoice, all you Christians	Cantata BWV 40, Darzu ist erschienen der Sohn Gottes
+248.12-2	9	Ermuntre dich, mein schwacher Geist	Take heart, my feeble spirit	Christmas Oratorio, BWV 248
+38.6	10	Aus tiefer Not schrei’ ich zu dir	From deep distress I cry to you	Cantata BWV 38, Aus tiefer Not schrei ich zu dir
+65.2	12	Puer natus in Bethlehem	A child is born in Bethlehem	Cantata BWV 65, Sie werden aus Saba alle kommen
+33.6	13	Allein zu dir, Herr Jesu Christ	In you alone, Lord Jesus Christ	Cantata BWV 33, Allein zu dir, Herr Jesu Christ
+184.5	14	O Herre Gott, dein göttlich Wort	O Lord God, your holy word	Cantata BWV 184, Erwünschtes Freudenlicht
+311	16	Es woll’ uns Gott genädig sein	May God be gracious to us	Four-part chorales, BWV 253–438
+145.5	17	Erschienen ist der herrliche Tag	The glorious day has dawned	Cantata BWV 145, Ich lebe, mein Herze, zu deinem Ergötzen
+318	18	Gottes Sohn ist kommen	God’s Son has come	Four-part chorales, BWV 253–438
+351	19	Ich hab’ mein’ Sach’ Gott heimgestellt	I have left my cause to God	Four-part chorales, BWV 253–438
+60.5	216	Es ist genug	It is enough	Cantata BWV 60, O Ewigkeit, du Donnerwort
+244.3	78	Herzliebster Jesu	Dearest Jesus, what have you done wrong	St Matthew Passion, BWV 244
+245.26	108	Valet will ich dir geben	I bid you farewell	St John Passion, BWV 245
+270	286	Befiehl du deine Wege	Commit your ways	Four-part chorales, BWV 253–438
+144.3	65	Was Gott tut, das ist wohlgetan	What God does is well done	Cantata BWV 144, Nimm, was dein ist, und gehe hin
+245.37	113	Christus, der uns selig macht	Christ, who makes us blessed	St John Passion, BWV 245
+6.6	72	Erhalt’ uns, Herr, bei deinem Wort	Keep us, Lord, by your word	Cantata BWV 6, Bleib bei uns, denn es will Abend werden
+26.6	48	Ach wie flüchtig, ach wie nichtig	Ah, how fleeting	Cantata BWV 26, Ach wie flüchtig, ach wie nichtig
+248.46-5	77	In dich hab’ ich gehoffet, Herr	In you I have put my hope, Lord	Christmas Oratorio, BWV 248
