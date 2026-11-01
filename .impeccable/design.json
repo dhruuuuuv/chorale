@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T00:00:00Z",
+  "title": "Design System: Chorale Workshop",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Daylight Paper",
+        "canonical": "oklch(95.4% 0.005 258.3)",
+        "tonalRamp": [
+          "oklch(15% 0.001 258)",
+          "oklch(25% 0.001 258)",
+          "oklch(35% 0.001 258)",
+          "oklch(46% 0.002 258)",
+          "oklch(57% 0.002 258)",
+          "oklch(68% 0.003 258)",
+          "oklch(80% 0.004 258)",
+          "oklch(93% 0.005 258)"
+        ],
+        "cssVar": "--paper"
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Paper",
+        "canonical": "oklch(18.7% 0.013 270.7)",
+        "tonalRamp": [
+          "oklch(15% 0.012 271)",
+          "oklch(25% 0.012 271)",
+          "oklch(35% 0.010 271)",
+          "oklch(46% 0.008 271)",
+          "oklch(57% 0.007 271)",
+          "oklch(68% 0.005 271)",
+          "oklch(80% 0.003 271)",
+          "oklch(93% 0.013 271)"
+        ],
+        "cssVar": "--paper",
+        "theme": "dark"
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "oklch(97.9% 0.003 264.5)",
+        "tonalRamp": [
+          "oklch(15% 0.000 265)",
+          "oklch(25% 0.000 265)",
+          "oklch(35% 0.001 265)",
+          "oklch(46% 0.001 265)",
+          "oklch(57% 0.001 265)",
+          "oklch(68% 0.002 265)",
+          "oklch(80% 0.002 265)",
+          "oklch(93% 0.003 265)"
+        ],
+        "cssVar": "--sheet"
+      },
+      "sheet-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Sheet",
+        "canonical": "oklch(21.8% 0.015 266.9)",
+        "tonalRamp": [
+          "oklch(15% 0.013 267)",
+          "oklch(25% 0.014 267)",
+          "oklch(35% 0.012 267)",
+          "oklch(46% 0.010 267)",
+          "oklch(57% 0.008 267)",
+          "oklch(68% 0.006 267)",
+          "oklch(80% 0.004 267)",
+          "oklch(93% 0.015 267)"
+        ],
+        "cssVar": "--sheet",
+        "theme": "dark"
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "canonical": "oklch(23.2% 0.018 270.5)",
+        "tonalRamp": [
+          "oklch(15% 0.016 271)",
+          "oklch(25% 0.018 271)",
+          "oklch(35% 0.015 271)",
+          "oklch(46% 0.013 271)",
+          "oklch(57% 0.010 271)",
+          "oklch(68% 0.008 271)",
+          "oklch(80% 0.005 271)",
+          "oklch(93% 0.018 271)"
+        ],
+        "cssVar": "--ink"
+      },
+      "ink-dark": {
+        "role": "primary",
+        "displayName": "Organ-Loft Ink",
+        "canonical": "oklch(93.1% 0.008 271.3)",
+        "tonalRamp": [
+          "oklch(15% 0.001 271)",
+          "oklch(25% 0.001 271)",
+          "oklch(35% 0.002 271)",
+          "oklch(46% 0.003 271)",
+          "oklch(57% 0.005 271)",
+          "oklch(68% 0.006 271)",
+          "oklch(80% 0.007 271)",
+          "oklch(93% 0.008 271)"
+        ],
+        "cssVar": "--ink",
+        "theme": "dark"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "oklch(43.2% 0.029 269.9)",
+        "tonalRamp": [
+          "oklch(15% 0.019 270)",
+          "oklch(25% 0.023 270)",
+          "oklch(35% 0.026 270)",
+          "oklch(46% 0.028 270)",
+          "oklch(57% 0.024 270)",
+          "oklch(68% 0.020 270)",
+          "oklch(80% 0.016 270)",
+          "oklch(93% 0.020 270)"
+        ],
+        "cssVar": "--ink-2"
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Ink 2",
+        "canonical": "oklch(78.6% 0.019 269.0)",
+        "tonalRamp": [
+          "oklch(15% 0.004 269)",
+          "oklch(25% 0.006 269)",
+          "oklch(35% 0.009 269)",
+          "oklch(46% 0.011 269)",
+          "oklch(57% 0.014 269)",
+          "oklch(68% 0.017 269)",
+          "oklch(80% 0.019 269)",
+          "oklch(93% 0.019 269)"
+        ],
+        "cssVar": "--ink-2",
+        "theme": "dark"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "oklch(49.7% 0.028 270.0)",
+        "tonalRamp": [
+          "oklch(15% 0.016 270)",
+          "oklch(25% 0.019 270)",
+          "oklch(35% 0.023 270)",
+          "oklch(46% 0.027 270)",
+          "oklch(57% 0.026 270)",
+          "oklch(68% 0.022 270)",
+          "oklch(80% 0.017 270)",
+          "oklch(93% 0.020 270)"
+        ],
+        "cssVar": "--ink-3"
+      },
+      "ink-3-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Ink 3",
+        "canonical": "oklch(66.4% 0.025 269.3)",
+        "tonalRamp": [
+          "oklch(15% 0.009 269)",
+          "oklch(25% 0.012 269)",
+          "oklch(35% 0.015 269)",
+          "oklch(46% 0.018 269)",
+          "oklch(57% 0.022 269)",
+          "oklch(68% 0.024 269)",
+          "oklch(80% 0.020 269)",
+          "oklch(93% 0.020 269)"
+        ],
+        "cssVar": "--ink-3",
+        "theme": "dark"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(87.8% 0.012 264.5)",
+        "tonalRamp": [
+          "oklch(15% 0.002 265)",
+          "oklch(25% 0.003 265)",
+          "oklch(35% 0.004 265)",
+          "oklch(46% 0.006 265)",
+          "oklch(57% 0.007 265)",
+          "oklch(68% 0.009 265)",
+          "oklch(80% 0.011 265)",
+          "oklch(93% 0.012 265)"
+        ],
+        "cssVar": "--rule"
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Rule",
+        "canonical": "oklch(30.6% 0.021 269.4)",
+        "tonalRamp": [
+          "oklch(15% 0.017 269)",
+          "oklch(25% 0.019 269)",
+          "oklch(35% 0.020 269)",
+          "oklch(46% 0.017 269)",
+          "oklch(57% 0.014 269)",
+          "oklch(68% 0.011 269)",
+          "oklch(80% 0.008 269)",
+          "oklch(93% 0.020 269)"
+        ],
+        "cssVar": "--rule",
+        "theme": "dark"
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "canonical": "oklch(79.1% 0.018 264.5)",
+        "tonalRamp": [
+          "oklch(15% 0.004 264)",
+          "oklch(25% 0.006 264)",
+          "oklch(35% 0.008 264)",
+          "oklch(46% 0.011 264)",
+          "oklch(57% 0.013 264)",
+          "oklch(68% 0.016 264)",
+          "oklch(80% 0.018 264)",
+          "oklch(93% 0.018 264)"
+        ],
+        "cssVar": "--rule-strong"
+      },
+      "rule-strong-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Strong Rule",
+        "canonical": "oklch(38.0% 0.025 269.7)",
+        "tonalRamp": [
+          "oklch(15% 0.018 270)",
+          "oklch(25% 0.021 270)",
+          "oklch(35% 0.024 270)",
+          "oklch(46% 0.022 270)",
+          "oklch(57% 0.019 270)",
+          "oklch(68% 0.016 270)",
+          "oklch(80% 0.012 270)",
+          "oklch(93% 0.020 270)"
+        ],
+        "cssVar": "--rule-strong",
+        "theme": "dark"
+      },
+      "grid": {
+        "role": "neutral",
+        "displayName": "Grid",
+        "canonical": "oklch(92.4% 0.009 264.5)",
+        "tonalRamp": [
+          "oklch(15% 0.001 265)",
+          "oklch(25% 0.001 265)",
+          "oklch(35% 0.002 265)",
+          "oklch(46% 0.004 265)",
+          "oklch(57% 0.005 265)",
+          "oklch(68% 0.006 265)",
+          "oklch(80% 0.007 265)",
+          "oklch(93% 0.009 265)"
+        ],
+        "cssVar": "--grid"
+      },
+      "grid-dark": {
+        "role": "neutral",
+        "displayName": "Organ-Loft Grid",
+        "canonical": "oklch(25.6% 0.018 266.3)",
+        "tonalRamp": [
+          "oklch(15% 0.016 266)",
+          "oklch(25% 0.018 266)",
+          "oklch(35% 0.016 266)",
+          "oklch(46% 0.013 266)",
+          "oklch(57% 0.011 266)",
+          "oklch(68% 0.008 266)",
+          "oklch(80% 0.006 266)",
+          "oklch(93% 0.018 266)"
+        ],
+        "cssVar": "--grid",
+        "theme": "dark"
+      },
+      "soprano-vermilion": {
+        "role": "secondary",
+        "displayName": "Soprano Vermilion",
+        "canonical": "oklch(50.2% 0.180 24.6)",
+        "tonalRamp": [
+          "oklch(15% 0.101 25)",
+          "oklch(25% 0.123 25)",
+          "oklch(35% 0.146 25)",
+          "oklch(46% 0.171 25)",
+          "oklch(57% 0.165 25)",
+          "oklch(68% 0.140 25)",
+          "oklch(80% 0.113 25)",
+          "oklch(93% 0.020 25)"
+        ],
+        "cssVar": "--v-s"
+      },
+      "soprano-vermilion-dark": {
+        "role": "secondary",
+        "displayName": "Soprano Vermilion (dark)",
+        "canonical": "oklch(68.6% 0.173 20.3)",
+        "tonalRamp": [
+          "oklch(15% 0.057 20)",
+          "oklch(25% 0.078 20)",
+          "oklch(35% 0.100 20)",
+          "oklch(46% 0.124 20)",
+          "oklch(57% 0.148 20)",
+          "oklch(68% 0.171 20)",
+          "oklch(80% 0.148 20)",
+          "oklch(93% 0.020 20)"
+        ],
+        "cssVar": "--v-s",
+        "theme": "dark"
+      },
+      "alto-ochre": {
+        "role": "secondary",
+        "displayName": "Alto Ochre",
+        "canonical": "oklch(56.7% 0.127 65.3)",
+        "tonalRamp": [
+          "oklch(15% 0.061 65)",
+          "oklch(25% 0.077 65)",
+          "oklch(35% 0.092 65)",
+          "oklch(46% 0.110 65)",
+          "oklch(57% 0.126 65)",
+          "oklch(68% 0.109 65)",
+          "oklch(80% 0.090 65)",
+          "oklch(93% 0.020 65)"
+        ],
+        "cssVar": "--v-a"
+      },
+      "alto-ochre-dark": {
+        "role": "secondary",
+        "displayName": "Alto Ochre (dark)",
+        "canonical": "oklch(77.0% 0.141 72.0)",
+        "tonalRamp": [
+          "oklch(15% 0.032 72)",
+          "oklch(25% 0.049 72)",
+          "oklch(35% 0.067 72)",
+          "oklch(46% 0.086 72)",
+          "oklch(57% 0.105 72)",
+          "oklch(68% 0.125 72)",
+          "oklch(80% 0.135 72)",
+          "oklch(93% 0.020 72)"
+        ],
+        "cssVar": "--v-a",
+        "theme": "dark"
+      },
+      "tenor-teal": {
+        "role": "secondary",
+        "displayName": "Tenor Teal",
+        "canonical": "oklch(52.2% 0.089 184.7)",
+        "tonalRamp": [
+          "oklch(15% 0.048 185)",
+          "oklch(25% 0.059 185)",
+          "oklch(35% 0.070 185)",
+          "oklch(46% 0.082 185)",
+          "oklch(57% 0.084 185)",
+          "oklch(68% 0.072 185)",
+          "oklch(80% 0.058 185)",
+          "oklch(93% 0.020 185)"
+        ],
+        "cssVar": "--v-t"
+      },
+      "tenor-teal-dark": {
+        "role": "secondary",
+        "displayName": "Tenor Teal (dark)",
+        "canonical": "oklch(74.0% 0.114 184.2)",
+        "tonalRamp": [
+          "oklch(15% 0.030 184)",
+          "oklch(25% 0.044 184)",
+          "oklch(35% 0.059 184)",
+          "oklch(46% 0.074 184)",
+          "oklch(57% 0.090 184)",
+          "oklch(68% 0.106 184)",
+          "oklch(80% 0.106 184)",
+          "oklch(93% 0.020 184)"
+        ],
+        "cssVar": "--v-t",
+        "theme": "dark"
+      },
+      "bass-indigo": {
+        "role": "secondary",
+        "displayName": "Bass Indigo",
+        "canonical": "oklch(42.7% 0.164 275.3)",
+        "tonalRamp": [
+          "oklch(15% 0.107 275)",
+          "oklch(25% 0.128 275)",
+          "oklch(35% 0.148 275)",
+          "oklch(46% 0.157 275)",
+          "oklch(57% 0.135 275)",
+          "oklch(68% 0.112 275)",
+          "oklch(80% 0.087 275)",
+          "oklch(93% 0.020 275)"
+        ],
+        "cssVar": "--v-b"
+      },
+      "bass-indigo-dark": {
+        "role": "secondary",
+        "displayName": "Bass Indigo (dark)",
+        "canonical": "oklch(70.4% 0.139 280.4)",
+        "tonalRamp": [
+          "oklch(15% 0.043 280)",
+          "oklch(25% 0.060 280)",
+          "oklch(35% 0.078 280)",
+          "oklch(46% 0.097 280)",
+          "oklch(57% 0.116 280)",
+          "oklch(68% 0.135 280)",
+          "oklch(80% 0.123 280)",
+          "oklch(93% 0.020 280)"
+        ],
+        "cssVar": "--v-b",
+        "theme": "dark"
+      },
+      "clash-plum": {
+        "role": "tertiary",
+        "displayName": "Clash Plum",
+        "canonical": "oklch(47.0% 0.144 316.9)",
+        "tonalRamp": [
+          "oklch(15% 0.086 317)",
+          "oklch(25% 0.104 317)",
+          "oklch(35% 0.122 317)",
+          "oklch(46% 0.142 317)",
+          "oklch(57% 0.126 317)",
+          "oklch(68% 0.106 317)",
+          "oklch(80% 0.085 317)",
+          "oklch(93% 0.020 317)"
+        ],
+        "cssVar": "--clash"
+      },
+      "clash-plum-dark": {
+        "role": "tertiary",
+        "displayName": "Clash Plum (dark)",
+        "canonical": "oklch(72.8% 0.136 316.5)",
+        "tonalRamp": [
+          "oklch(15% 0.038 317)",
+          "oklch(25% 0.055 317)",
+          "oklch(35% 0.072 317)",
+          "oklch(46% 0.090 317)",
+          "oklch(57% 0.109 317)",
+          "oklch(68% 0.128 317)",
+          "oklch(80% 0.124 317)",
+          "oklch(93% 0.020 317)"
+        ],
+        "cssVar": "--clash",
+        "theme": "dark"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Library page title only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Open chorale title in the top bar; library section heads at 1.625rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Shelf item titles; table row titles at 1.1875rem."
+      },
+      "lyric": {
+        "displayName": "Lyric",
+        "purpose": "Sung words and German first lines, always italic."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default interface text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, segmented options, fields."
+      },
+      "label-strong": {
+        "displayName": "Label Strong",
+        "purpose": "Primary and outline buttons, chip names, legends."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Hints, sources, table headers, footnotes."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "BWV and Riemenschneider numbers, tempo, bar and phrase numbers, tags."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 6px 24px rgb(26 29 38 / 0.12), 0 1px 3px rgb(26 29 38 / 0.08)",
+        "purpose": "Popovers, hint bubbles and notices only (light)."
+      },
+      {
+        "name": "float-dark",
+        "value": "0 8px 28px rgb(0 0 0 / 0.5), 0 1px 3px rgb(0 0 0 / 0.4)",
+        "purpose": "Same role in the organ-loft dark theme."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All interface transitions."
+      },
+      {
+        "name": "state",
+        "value": "120ms",
+        "purpose": "Background, colour and press changes on controls and chips."
+      },
+      {
+        "name": "row-hover",
+        "value": "160ms",
+        "purpose": "Shelf cell hover tint."
+      },
+      {
+        "name": "hint-in",
+        "value": "320ms",
+        "purpose": "Hints and notices rise 4px and fade in."
+      },
+      {
+        "name": "level",
+        "value": "80ms linear",
+        "purpose": "Voice level bar follows gain."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms; canvas steps a phrase at a time",
+        "purpose": "prefers-reduced-motion: no glide, no animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "760px"
+      },
+      {
+        "name": "portrait-phone",
+        "value": "600px, orientation portrait"
+      }
+    ],
+    "focusRing": {
+      "value": "2px solid var(--focus); outline-offset: 2px",
+      "purpose": "Every focusable element."
+    },
+    "highContrast": {
+      "selector": ":root[data-contrast=\"more\"]",
+      "purpose": "ink-2 and ink-3 collapse to ink; rules strengthen; canvas voices gain dash patterns S solid, A 7-4, T 2-3, B 9-3-2-3."
+    }
+  },
+  "components": [
+    {
+      "name": "Play Button",
+      "kind": "button",
+      "refersTo": "button-play",
+      "description": "The one primary action: start and pause the music.",
+      "html": "<button class=\"ds-play\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.5 4.2v11.6a.6.6 0 0 0 .9.5l9.3-5.8a.6.6 0 0 0 0-1L7.4 3.7a.6.6 0 0 0-.9.5Z\" fill=\"currentColor\" stroke=\"none\"/></svg>Play</button>",
+      "css": ".ds-play { display: inline-flex; align-items: center; gap: 8px; min-height: 52px; min-width: 9.5rem; padding: 0 1.4rem 0 1.15rem; border: 0; border-radius: 999px; background: var(--ink); color: var(--paper); font-family: var(--font-ui); font-weight: 700; font-size: 1.0625rem; cursor: pointer; transition: transform 120ms var(--ease-out), background-color 120ms var(--ease-out); } .ds-play:hover { background: color-mix(in srgb, var(--ink) 86%, var(--paper)); } .ds-play:active { transform: scale(0.98); } .ds-play:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary text action; inverts to ink on hover.",
+      "html": "<button class=\"ds-text-button\">Mute the alto</button>",
+      "css": ".ds-text-button { display: inline-flex; align-items: center; min-height: 40px; padding: 0 0.9rem; border: 1px solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink); font-family: var(--font-ui); font-weight: 700; font-size: 0.9375rem; cursor: pointer; } .ds-text-button:hover { background: var(--ink); color: var(--paper); } .ds-text-button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Loop Toggle",
+      "kind": "button",
+      "refersTo": "button-quiet-pill",
+      "description": "Quiet pill toggle; on state takes a 2px ink border.",
+      "html": "<div style=\"display:flex;gap:8px\"><button class=\"ds-loop\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 9V8a3 3 0 0 1 3-3h8m0 0-2.5-2.5M15 5l-2.5 2.5M16 11v1a3 3 0 0 1-3 3H5m0 0 2.5 2.5M5 15l2.5-2.5\"/></svg>Loop phrase</button><button class=\"ds-loop is-on\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 9V8a3 3 0 0 1 3-3h8m0 0-2.5-2.5M15 5l-2.5 2.5M16 11v1a3 3 0 0 1-3 3H5m0 0 2.5 2.5M5 15l2.5-2.5\"/></svg>Phrase 2</button></div>",
+      "css": ".ds-loop { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 0.95rem; border: 1px solid var(--rule-strong); border-radius: 999px; background: transparent; color: var(--ink-2); font-family: var(--font-ui); font-size: 0.9375rem; cursor: pointer; } .ds-loop:hover { color: var(--ink); border-color: var(--ink); } .ds-loop.is-on { border: 2px solid var(--ink); padding: 0 calc(0.95rem - 1px); color: var(--ink); font-weight: 700; } .ds-loop:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "44px authored-icon button: step, options, dismiss.",
+      "html": "<button class=\"ds-icon-button\" aria-label=\"Options\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 6h7m4 0h1M4 14h1m4 0h7M13 4v4M7 12v4\"/></svg></button>",
+      "css": ".ds-icon-button { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: var(--ink-2); cursor: pointer; transition: background-color 120ms var(--ease-out), color 120ms var(--ease-out); } .ds-icon-button:hover { background: var(--grid); color: var(--ink); } .ds-icon-button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Segmented Switch",
+      "kind": "nav",
+      "refersTo": "segmented",
+      "description": "Lens and view switcher; selected is an ink press.",
+      "html": "<div class=\"ds-segmented\" role=\"group\"><button aria-pressed=\"true\">Ribbons</button><button aria-pressed=\"false\">Score</button><button disabled>Build</button></div>",
+      "css": ".ds-segmented { display: inline-flex; padding: 3px; gap: 2px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); } .ds-segmented button { display: inline-flex; align-items: center; min-height: 38px; padding: 0 0.95rem; border: 0; border-radius: 999px; background: transparent; color: var(--ink-2); font-family: var(--font-ui); font-size: 0.9375rem; cursor: pointer; } .ds-segmented button[aria-pressed=\"true\"] { background: var(--ink); color: var(--paper); } .ds-segmented button:not(:disabled):not([aria-pressed=\"true\"]):hover { background: var(--grid); color: var(--ink); } .ds-segmented button:disabled { color: var(--ink-3); opacity: 0.6; cursor: not-allowed; } .ds-segmented button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Voice Chip",
+      "kind": "custom",
+      "refersTo": "voice-chip",
+      "description": "Signature: tap to mute, hold to solo; letter, name, state and level.",
+      "html": "<div style=\"display:grid;gap:8px;width:232px\"><div class=\"ds-chip-row\" style=\"--c: var(--v-s)\"><button class=\"ds-chip\"><span class=\"ds-chip-letter\">S</span><span class=\"ds-chip-name\">Soprano</span><span class=\"ds-chip-state\"></span><span class=\"ds-chip-level\"><span style=\"transform:scaleX(.7)\"></span></span></button><button class=\"ds-solo\" aria-label=\"Solo\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12v-1a6 6 0 0 1 12 0v1M4 12h2.5v4H5a1 1 0 0 1-1-1v-3Zm12 0h-2.5v4H15a1 1 0 0 0 1-1v-3Z\"/></svg></button></div><div class=\"ds-chip-row\" style=\"--c: var(--v-t)\"><button class=\"ds-chip is-silent\"><span class=\"ds-chip-letter\">T</span><span class=\"ds-chip-name\">Tenor</span><span class=\"ds-chip-state\">Muted</span><span class=\"ds-chip-level\"><span style=\"transform:scaleX(0)\"></span></span></button><button class=\"ds-solo\" aria-label=\"Solo\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12v-1a6 6 0 0 1 12 0v1M4 12h2.5v4H5a1 1 0 0 1-1-1v-3Zm12 0h-2.5v4H15a1 1 0 0 0 1-1v-3Z\"/></svg></button></div></div>",
+      "css": ".ds-chip-row { display: flex; gap: 4px; } .ds-chip { position: relative; flex: 1; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; min-height: 56px; padding: 0 12px 4px; border: 2px solid var(--c); border-radius: 12px; background: color-mix(in srgb, var(--c) 7%, var(--sheet)); color: var(--ink); text-align: left; font-family: var(--font-ui); cursor: pointer; overflow: hidden; transition: background-color 120ms var(--ease-out); } .ds-chip:hover { background: color-mix(in srgb, var(--c) 13%, var(--sheet)); } .ds-chip:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; } .ds-chip-letter { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--c); color: var(--sheet); font-weight: 700; font-size: 0.9375rem; } .ds-chip-name { font-weight: 700; } .ds-chip-state { font-size: 0.8125rem; color: var(--ink-2); } .ds-chip-level { position: absolute; left: 10px; right: 10px; bottom: 5px; height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--c) 18%, transparent); overflow: hidden; } .ds-chip-level span { display: block; height: 100%; background: var(--c); transform-origin: left; } .ds-chip.is-silent { border-style: dashed; background: transparent; } .ds-chip.is-silent .ds-chip-letter { background: transparent; box-shadow: inset 0 0 0 2px var(--c); color: var(--ink-2); } .ds-chip.is-silent .ds-chip-name { color: var(--ink-2); text-decoration: line-through; } .ds-solo { display: grid; place-items: center; width: 44px; min-height: 56px; border: 0; border-radius: 12px; background: transparent; color: var(--ink-2); cursor: pointer; } .ds-solo:hover { background: var(--grid); color: var(--ink); }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Library search: pill on sheet with a leading icon.",
+      "html": "<div class=\"ds-search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M9 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm4.5-1.5L17 17\"/></svg><input placeholder=\"Title, first line, BWV or Riemenschneider no.\"></div>",
+      "css": ".ds-search { position: relative; width: 26rem; max-width: 100%; color: var(--ink-3); } .ds-search svg { position: absolute; left: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; } .ds-search input { width: 100%; min-height: 44px; padding: 0 0.9rem 0 2.5rem; border: 1px solid var(--rule-strong); border-radius: 999px; background: var(--sheet); color: var(--ink); font-family: var(--font-ui); font-size: 1rem; } .ds-search input::placeholder { color: var(--ink-3); opacity: 1; } .ds-search input:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Mono figure box for loop count, tempo and stretch.",
+      "html": "<span class=\"ds-tag\">×3</span> <span class=\"ds-tag\">♩ = 72</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; padding: 2px 7px; border: 1px solid var(--rule-strong); border-radius: 4px; font-family: var(--font-mono); font-size: 0.8125rem; font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }"
+    },
+    {
+      "name": "Shelf Cell",
+      "kind": "card",
+      "description": "Ruled library cell under a 2px ink rule; not a card.",
+      "html": "<div class=\"ds-shelf\"><article class=\"ds-shelf-item\"><h3>O Haupt voll Blut und Wunden</h3><p class=\"ds-tr\">O head, full of blood and wounds</p><p class=\"ds-meta\">D minor · 8 phrases</p><button class=\"ds-preview\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.5 4.2v11.6a.6.6 0 0 0 .9.5l9.3-5.8a.6.6 0 0 0 0-1L7.4 3.7a.6.6 0 0 0-.9.5Z\" fill=\"currentColor\" stroke=\"none\"/></svg>Preview</button></article></div>",
+      "css": ".ds-shelf { border-top: 2px solid var(--ink); width: 14rem; } .ds-shelf-item { display: flex; flex-direction: column; gap: 4px; padding: 16px; border-bottom: 1px solid var(--rule); transition: background-color 160ms var(--ease-out); } .ds-shelf-item:hover { background: var(--sheet); } .ds-shelf-item h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1.375rem; line-height: 1.15; } .ds-tr { margin: 0; color: var(--ink-2); font-family: var(--font-ui); font-size: 0.9375rem; } .ds-meta { margin: 12px 0 0; font-family: var(--font-ui); font-size: 0.875rem; } .ds-preview { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; min-height: 44px; margin-top: 12px; padding: 0 0.9rem 0 0.75rem; border: 1px solid var(--rule-strong); border-radius: 999px; background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 0.9375rem; cursor: pointer; } .ds-preview:hover { border-color: var(--ink); background: var(--ink); color: var(--paper); } .ds-preview:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Hint Bubble",
+      "kind": "custom",
+      "refersTo": "hint-bubble",
+      "description": "Floating ink note; one at a time, after the music starts.",
+      "html": "<div class=\"ds-hint\"><span>Tap a voice to mute it. Press and hold to hear it alone.</span><button aria-label=\"Got it\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5.5 5.5 9 9m0-9-9 9\"/></svg></button></div>",
+      "css": ".ds-hint { display: inline-flex; align-items: center; gap: 8px; max-width: 22rem; padding: 6px 4px 6px 14px; border-radius: 10px; background: var(--ink); color: var(--paper); font-family: var(--font-ui); font-size: 0.9375rem; box-shadow: var(--shadow); animation: ds-hint-in 320ms var(--ease-out) both; } .ds-hint button { display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: 10px; background: transparent; color: var(--paper); cursor: pointer; } .ds-hint button:hover { background: color-mix(in srgb, var(--paper) 18%, transparent); } .ds-hint button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; } @keyframes ds-hint-in { from { opacity: 0; transform: translateY(4px); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ruled Hymnal Page",
+    "overview": "The chorale itself is the interface. Four voice-coloured ribbons run across a quiet paper field under one fixed ink playhead, and the music moves beneath it. Everything around the music is paper, ink and hairline rules: a printed hymnal's index and a conductor's stand, not a mixing desk. Colour is reserved for the voices so that when a line is coloured, it is singing.\n\nDensity is calm but working: one slim top bar, a left rail of four voice chips, a full-bleed canvas, a docked transport. Titles carry the period in IM Fell English; every control speaks in Atkinson Hyperlegible; sung words appear in Spectral Italic; numbers and pitch names sit in IBM Plex Mono. Depth comes from rules and tonal steps (paper to sheet), never from stacked cards. The world runs in two lights, daylight paper (#eef0f3) and organ-loft dark (#111319), with brighter voice variants in the dark.\n\nMotion follows the music only. Interface state changes are short (120ms) fades of background and colour; the canvas glides with playback, or steps a phrase at a time under reduced motion and on portrait phones.",
+    "keyCharacteristics": [
+      "Paper and ink ground; four voice hues used for voices and nothing else; plum only in the tension gauge.",
+      "Fixed playhead, moving music; fermatas are the loop controls.",
+      "Hairline 1px rules for structure; a 2px ink rule opens a list or a prompt.",
+      "Selection reads as an ink press: ink fill, paper text.",
+      "Colour never works alone: voice letters everywhere, dashed outlines for silence, dash patterns in high contrast.",
+      "44px minimum targets throughout."
+    ],
+    "rules": [
+      {
+        "name": "The Voice-Only Rule",
+        "body": "Vermilion, ochre, teal and indigo mean soprano, alto, tenor and bass. They never decorate, never mark state, never brand a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Plum Rule",
+        "body": "Clash plum appears only in the tension gauge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Letter Beside the Colour Rule",
+        "body": "Every voice colour is accompanied by its letter (S A T B) on chips and at each phrase start on the canvas; a silent voice is dashed and struck through, not just faded.",
+        "section": "colors"
+      },
+      {
+        "name": "The Four Hands Rule",
+        "body": "Each family has one job. Fell for titles of chorales and sections only, never for controls or body; Spectral Italic only for sung or German text; Plex Mono only for numbers and pitch names; Atkinson for everything else.",
+        "section": "typography"
+      },
+      {
+        "name": "The German With English Rule",
+        "body": "A German line is always followed by its translation in ink-2 sans, directly beneath.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Playhead Rule",
+        "body": "The playhead never moves; the music moves under it.",
+        "section": "layout"
+      },
+      {
+        "name": "The Floating-Only Shadow Rule",
+        "body": "A surface casts a shadow only if it floats over the music. Resting surfaces, rows, shelf cells and chips stay flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Lists and regions are separated by 1px rules, not boxed in cards. A 2px ink rule marks where a list begins.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep voice colours for voices: chips, ribbons, score noteheads, the mark.",
+      "Do pair every voice colour with its letter, and dash a silent voice.",
+      "Do show selection as an ink press: ink fill, paper text.",
+      "Do separate content with 1px rules and open lists with a 2px ink rule.",
+      "Do set chorale titles in IM Fell English and sung or German text in Spectral Italic, with an English translation beneath.",
+      "Do put numbers, tempo and pitch names in IBM Plex Mono with tabular figures.",
+      "Do keep every target at least 44px and every state change at 120ms ease-out.",
+      "Do derive voice tints with `color-mix` into sheet (7%, 13%, 20%)."
+    ],
+    "donts": [
+      "Don't use vermilion, ochre, teal or indigo for buttons, links, status or decoration.",
+      "Don't use clash plum anywhere but the tension gauge.",
+      "Don't put a shadow on a resting surface; only popovers, hints and notices float.",
+      "Don't box content in cards; shelves and tables are ruled, not carded.",
+      "Don't set controls or body copy in Fell, or numbers in the interface sans.",
+      "Don't animate the interface for its own sake; motion follows the music.",
+      "Don't use parchment textures, portraits, mascots, badges or confetti."
+    ]
+  }
+}
