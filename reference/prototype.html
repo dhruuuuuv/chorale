@@ -1,0 +1,224 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>O Haupt voll Blut und Wunden</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long chorale line you scroll through like an open hymn book, with a clash gauge running underneath like a figured bass. */
+:root{
+  --paper:#EEF0F3; --panel:#FFFFFF; --ink:#1A1D26; --muted:#5A6070; --rule:#D3D7DF; --grid:#E3E6EC;
+  --v0:#B4232A; --v1:#A86400; --v2:#0E7A70; --v3:#3A3EA6; --clash:#7A3B8F;
+  --display:"IM Fell English", "Iowan Old Style", Georgia, serif;
+  --body:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#111319; --panel:#191C24; --ink:#E6E8EE; --muted:#9BA1B0; --rule:#2B2F3A; --grid:#22262F;
+  --v0:#F2666C; --v1:#EBA43F; --v2:#3EC2B3; --v3:#9094F4; --clash:#C98BE0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#111319; --panel:#191C24; --ink:#E6E8EE; --muted:#9BA1B0; --rule:#2B2F3A; --grid:#22262F;
+  --v0:#F2666C; --v1:#EBA43F; --v2:#3EC2B3; --v3:#9094F4; --clash:#C98BE0; color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,7vw,60px);line-height:1.02;margin:6px 0 10px;text-wrap:balance}
+h1 i{color:var(--v0)}
+.lede{max-width:62ch;margin:0;color:var(--ink)}
+.lede em{font-style:italic}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.play{appearance:none;border:0;border-radius:999px;background:var(--ink);color:var(--paper);font:500 15px var(--mono);padding:10px 20px 10px 16px;display:inline-flex;align-items:center;gap:10px;cursor:pointer}
+.play svg{width:14px;height:14px;fill:currentColor}
+.play:focus-visible,.chip:focus-visible,input:focus-visible{outline:2px solid var(--v3);outline-offset:3px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{appearance:none;cursor:pointer;border:1.5px solid var(--c);background:transparent;color:var(--ink);border-radius:999px;font:500 13px var(--mono);padding:6px 12px;display:inline-flex;align-items:center;gap:7px}
+.chip::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--c)}
+.chip[aria-pressed="false"]{opacity:.45;border-style:dashed}
+.chip[aria-pressed="false"]::before{background:transparent;border:1.5px solid var(--c);width:6px;height:6px}
+.tempo{display:flex;align-items:center;gap:8px;font:13px var(--mono);color:var(--muted)}
+.tempo input{width:110px;accent-color:var(--ink)}
+.tempo output{font-variant-numeric:tabular-nums;color:var(--ink);min-width:2.5ch}
+.board{background:var(--panel);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.readout{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;padding:12px 16px;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.readout b{font-weight:500;color:var(--ink)}
+.readout .word{font-family:var(--display);font-size:22px;color:var(--ink);font-style:italic}
+.readout .chord{font-size:18px;color:var(--ink)}
+.stage{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;cursor:pointer}
+.stage svg{display:block}
+.hint{font:12px var(--mono);color:var(--muted);padding:8px 16px;border-top:1px solid var(--rule)}
+svg text{font-family:var(--mono);fill:var(--muted)}
+svg .lyr{font-family:var(--body);font-style:italic;font-size:13px;fill:var(--ink)}
+svg .chd{font-size:10px}
+svg .pn{font-size:10px;fill:var(--muted)}
+.note{transition:opacity .2s}
+.note.on{stroke:var(--ink);stroke-width:1.5}
+.vg.off{opacity:.12}
+.look{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px 28px}
+.look h2{font-family:var(--display);font-weight:400;font-size:22px;margin:0 0 4px;text-wrap:balance}
+.look p{margin:0;max-width:60ch}
+.look section{min-width:0}
+.sw{display:inline-block;width:.7em;height:.7em;border-radius:2px;vertical-align:baseline;margin-right:2px}
+footer{font:12px/1.6 var(--mono);color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+@media (prefers-reduced-motion: reduce){.note{transition:none}}
+</style>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">J. S. Bach · St Matthew Passion, BWV 244 · four-part chorale</p>
+    <h1>O Haupt voll <i>Blut</i> und Wunden</h1>
+    <p class="lede">The “Passion Chorale”, drawn from its actual score. Each coloured line is one singer; the shaded strip underneath shows how much the harmony clashes at every moment. Press play and watch the four voices pull against each other, then settle at every pause.</p>
+  </header>
+
+  <div class="controls">
+    <button class="play" id="play" type="button" aria-label="Play"><svg viewBox="0 0 14 14" id="ico"><path d="M2 1l11 6-11 6z"/></svg><span id="playlbl">Play</span></button>
+    <div class="chips" role="group" aria-label="Voices">
+      <button class="chip" id="v0" type="button" aria-pressed="true" style="--c:var(--v0)">Soprano</button>
+      <button class="chip" id="v1" type="button" aria-pressed="true" style="--c:var(--v1)">Alto</button>
+      <button class="chip" id="v2" type="button" aria-pressed="true" style="--c:var(--v2)">Tenor</button>
+      <button class="chip" id="v3" type="button" aria-pressed="true" style="--c:var(--v3)">Bass</button>
+    </div>
+    <label class="tempo" for="tempo">♩ = <output id="bpmout">60</output><input id="tempo" type="range" min="40" max="96" step="2" value="60"></label>
+  </div>
+
+  <div class="board">
+    <div class="readout" aria-live="off">
+      <span class="word" id="rw">O</span>
+      <span>chord <b class="chord" id="rc">Dm</b></span>
+      <span>clash <b id="rt">0</b></span>
+      <span>phrase <b id="rp">1</b> of 8</span>
+      <span>bar <b id="rb">0</b></span>
+    </div>
+    <div class="stage" id="stage"><svg id="svg" role="img" aria-label="Piano-roll of the four voices of the chorale, with lyrics and a harmonic clash gauge"></svg></div>
+    <div class="hint">Tap anywhere on the score to jump there. Tap a voice above to mute it.</div>
+  </div>
+
+  <div class="look">
+    <section>
+      <h2>Every pause lands on a plain chord</h2>
+      <p>All eight fermatas fall on a simple major or minor triad, so the clash gauge drops to zero at each one. The friction builds in the middle of the phrase, where passing notes in the inner voices rub against each other.</p>
+    </section>
+    <section>
+      <h2>Minor at the start, major at the end</h2>
+      <p>It opens on D minor and finishes on F major. Phrase six, on “Ehr und Zier” (honour and adornment), closes on a bright D <em>major</em> chord rather than the minor one you might expect.</p>
+    </section>
+    <section>
+      <h2>The tune was a love song</h2>
+      <p>Hans Leo Hassler published the melody in 1601 as a secular song. Bach set it several times across the Passion, and Paul Simon reused it for “American Tune” in 1973.</p>
+    </section>
+  </div>
+
+  <footer>Score: music21 corpus file bwv244.54, with the repeat written out. Chord names and the clash score are computed from the notes: clash adds up the semitones, whole tones, sevenths and tritones sounding together (blank chord names are passing sonorities). Playback is a simple synthesised organ tone, with each fermata held longer.</footer>
+</main>
+<script>
+const D={"v":[[[69,0.0,1.0,0,"A4"],[74,1.0,1.0,0,"D5"],[72,2.0,1.0,0,"C5"],[70,3.0,1.0,0,"B♭4"],[69,4.0,1.0,0,"A4"],[67,5.0,2.0,0,"G4"],[69,7.0,1.0,1,"A4"],[76,8.0,1.0,0,"E5"],[77,9.0,1.0,0,"F5"],[77,10.0,1.0,0,"F5"],[76,11.0,0.5,0,"E5"],[74,11.5,0.5,0,"D5"],[76,12.0,1.0,0,"E5"],[74,13.0,3.0,1,"D5"],[69,16.0,1.0,0,"A4"],[74,17.0,1.0,0,"D5"],[72,18.0,1.0,0,"C5"],[70,19.0,1.0,0,"B♭4"],[69,20.0,1.0,0,"A4"],[67,21.0,2.0,0,"G4"],[69,23.0,1.0,1,"A4"],[76,24.0,1.0,0,"E5"],[77,25.0,1.0,0,"F5"],[77,26.0,1.0,0,"F5"],[76,27.0,0.5,0,"E5"],[74,27.5,0.5,0,"D5"],[76,28.0,1.0,0,"E5"],[74,29.0,3.0,1,"D5"],[77,32.0,1.0,0,"F5"],[76,33.0,0.5,0,"E5"],[74,33.5,0.5,0,"D5"],[72,34.0,1.0,0,"C5"],[74,35.0,1.0,0,"D5"],[76,36.0,1.0,0,"E5"],[77,37.0,2.0,0,"F5"],[77,39.0,1.0,1,"F5"],[72,40.0,1.0,0,"C5"],[74,41.0,1.0,0,"D5"],[72,42.0,1.0,0,"C5"],[70,43.0,0.5,0,"B♭4"],[69,43.5,0.5,0,"A4"],[70,44.0,1.0,0,"B♭4"],[69,45.0,3.0,1,"A4"],[77,48.0,1.0,0,"F5"],[76,49.0,0.5,0,"E5"],[77,49.5,0.5,0,"F5"],[79,50.0,1.0,0,"G5"],[77,51.0,1.0,0,"F5"],[76,52.0,1.0,0,"E5"],[74,53.0,2.0,0,"D5"],[76,55.0,1.0,1,"E5"],[69,56.0,1.0,0,"A4"],[70,57.0,1.0,0,"B♭4"],[69,58.0,1.0,0,"A4"],[67,59.0,1.0,0,"G4"],[72,60.0,1.0,0,"C5"],[69,61.0,3.0,1,"A4"]],[[65,0.0,1.0,0,"F4"],[65,1.0,0.5,0,"F4"],[67,1.5,0.5,0,"G4"],[69,2.0,1.0,0,"A4"],[62,3.0,0.5,0,"D4"],[64,3.5,0.5,0,"E4"],[65,4.0,1.0,0,"F4"],[65,5.0,1.0,0,"F4"],[64,6.0,1.0,0,"E4"],[65,7.0,1.0,1,"F4"],[69,8.0,1.0,0,"A4"],[69,9.0,1.0,0,"A4"],[69,10.0,1.0,0,"A4"],[69,11.0,1.0,0,"A4"],[69,12.0,0.5,0,"A4"],[67,12.5,0.5,0,"G4"],[65,13.0,3.0,1,"F4"],[65,16.0,1.0,0,"F4"],[65,17.0,0.5,0,"F4"],[67,17.5,0.5,0,"G4"],[69,18.0,1.0,0,"A4"],[62,19.0,0.5,0,"D4"],[64,19.5,0.5,0,"E4"],[65,20.0,1.0,0,"F4"],[65,21.0,1.0,0,"F4"],[64,22.0,1.0,0,"E4"],[65,23.0,1.0,1,"F4"],[69,24.0,1.0,0,"A4"],[69,25.0,1.0,0,"A4"],[69,26.0,1.0,0,"A4"],[69,27.0,1.0,0,"A4"],[69,28.0,0.5,0,"A4"],[67,28.5,0.5,0,"G4"],[65,29.0,3.0,1,"F4"],[69,32.0,1.0,0,"A4"],[67,33.0,1.0,0,"G4"],[67,34.0,0.5,0,"G4"],[65,34.5,0.5,0,"F4"],[65,35.0,1.0,0,"F4"],[70,36.0,1.0,0,"B♭4"],[70,37.0,1.0,0,"B♭4"],[69,38.0,0.5,0,"A4"],[67,38.5,0.5,0,"G4"],[69,39.0,1.0,1,"A4"],[69,40.0,1.0,0,"A4"],[69,41.0,0.5,0,"A4"],[67,41.5,0.5,0,"G4"],[69,42.0,1.0,0,"A4"],[67,43.0,0.5,0,"G4"],[66,43.5,0.5,0,"F#4"],[67,44.0,1.0,0,"G4"],[66,45.0,3.0,1,"F#4"],[67,48.0,1.0,0,"G4"],[67,49.0,1.0,0,"G4"],[72,50.0,1.0,0,"C5"],[72,51.0,1.0,0,"C5"],[72,52.0,1.0,0,"C5"],[72,53.0,1.0,0,"C5"],[71,54.0,1.0,0,"B4"],[72,55.0,1.0,1,"C5"],[65,56.0,0.5,0,"F4"],[64,56.5,0.5,0,"E4"],[62,57.0,0.5,0,"D4"],[64,57.5,0.5,0,"E4"],[65,58.0,1.0,0,"F4"],[65,59.0,1.0,0,"F4"],[64,60.0,1.0,0,"E4"],[65,61.0,3.0,1,"F4"]],[[62,0.0,1.0,0,"D4"],[62,1.0,0.5,0,"D4"],[64,1.5,0.5,0,"E4"],[65,2.0,1.0,0,"F4"],[67,3.0,1.0,0,"G4"],[60,4.0,1.0,0,"C4"],[62,5.0,1.0,0,"D4"],[60,6.0,1.0,0,"C4"],[60,7.0,1.0,1,"C4"],[64,8.0,1.0,0,"E4"],[64,9.0,1.0,0,"E4"],[62,10.0,1.0,0,"D4"],[62,11.0,1.0,0,"D4"],[61,12.0,1.0,0,"C#4"],[57,13.0,3.0,1,"A3"],[62,16.0,1.0,0,"D4"],[62,17.0,0.5,0,"D4"],[64,17.5,0.5,0,"E4"],[65,18.0,1.0,0,"F4"],[67,19.0,1.0,0,"G4"],[60,20.0,1.0,0,"C4"],[62,21.0,1.0,0,"D4"],[60,22.0,1.0,0,"C4"],[60,23.0,1.0,1,"C4"],[64,24.0,1.0,0,"E4"],[64,25.0,1.0,0,"E4"],[62,26.0,1.0,0,"D4"],[62,27.0,1.0,0,"D4"],[61,28.0,1.0,0,"C#4"],[57,29.0,3.0,1,"A3"],[62,32.0,0.5,0,"D4"],[60,32.5,0.5,0,"C4"],[58,33.0,1.0,0,"B♭3"],[60,34.0,1.0,0,"C4"],[60,35.0,1.0,0,"C4"],[58,36.0,0.5,0,"B♭3"],[60,36.5,0.5,0,"C4"],[62,37.0,1.0,0,"D4"],[60,38.0,0.5,0,"C4"],[58,38.5,0.5,0,"B♭3"],[60,39.0,1.0,1,"C4"],[65,40.0,0.5,0,"F4"],[63,40.5,0.5,0,"E♭4"],[62,41.0,1.0,0,"D4"],[62,42.0,1.0,0,"D4"],[62,43.0,1.0,0,"D4"],[62,44.0,1.0,0,"D4"],[62,45.0,3.0,1,"D4"],[62,48.0,1.0,0,"D4"],[60,49.0,0.5,0,"C4"],[62,49.5,0.5,0,"D4"],[64,50.0,1.0,0,"E4"],[65,51.0,1.0,0,"F4"],[67,52.0,1.0,0,"G4"],[69,53.0,1.0,0,"A4"],[67,54.0,1.0,0,"G4"],[67,55.0,1.0,1,"G4"],[60,56.0,1.0,0,"C4"],[58,57.0,1.0,0,"B♭3"],[60,58.0,1.0,0,"C4"],[60,59.0,0.5,0,"C4"],[58,59.5,0.25,0,"B♭3"],[57,59.75,0.25,0,"A3"],[55,60.0,0.5,0,"G3"],[60,60.5,0.5,0,"C4"],[60,61.0,3.0,1,"C4"]],[[62,0.0,0.5,0,"D4"],[60,0.5,0.5,0,"C4"],[58,1.0,1.0,0,"B♭3"],[57,2.0,1.0,0,"A3"],[55,3.0,1.0,0,"G3"],[53,4.0,1.0,0,"F3"],[46,5.0,1.0,0,"B♭2"],[48,6.0,1.0,0,"C3"],[53,7.0,1.0,1,"F3"],[49,8.0,1.0,0,"C#3"],[50,9.0,0.5,0,"D3"],[52,9.5,0.5,0,"E3"],[53,10.0,0.5,0,"F3"],[55,10.5,0.5,0,"G3"],[57,11.0,1.0,0,"A3"],[45,12.0,1.0,0,"A2"],[50,13.0,3.0,1,"D3"],[62,16.0,0.5,0,"D4"],[60,16.5,0.5,0,"C4"],[58,17.0,1.0,0,"B♭3"],[57,18.0,1.0,0,"A3"],[55,19.0,1.0,0,"G3"],[53,20.0,1.0,0,"F3"],[46,21.0,1.0,0,"B♭2"],[48,22.0,1.0,0,"C3"],[53,23.0,1.0,1,"F3"],[49,24.0,1.0,0,"C#3"],[50,25.0,0.5,0,"D3"],[52,25.5,0.5,0,"E3"],[53,26.0,0.5,0,"F3"],[55,26.5,0.5,0,"G3"],[57,27.0,1.0,0,"A3"],[45,28.0,1.0,0,"A2"],[50,29.0,3.0,1,"D3"],[50,32.0,1.0,0,"D3"],[55,33.0,1.0,0,"G3"],[57,34.0,1.0,0,"A3"],[58,35.0,0.5,0,"B♭3"],[57,35.5,0.5,0,"A3"],[55,36.0,1.0,0,"G3"],[53,37.0,2.0,0,"F3"],[53,39.0,1.0,1,"F3"],[53,40.0,1.0,0,"F3"],[58,41.0,1.0,0,"B♭3"],[54,42.0,1.0,0,"F#3"],[55,43.0,1.0,0,"G3"],[43,44.0,1.0,0,"G2"],[50,45.0,3.0,1,"D3"],[47,48.0,1.0,0,"B2"],[48,49.0,1.0,0,"C3"],[60,50.0,0.5,0,"C4"],[59,50.5,0.5,0,"B3"],[57,51.0,1.0,0,"A3"],[55,52.0,1.0,0,"G3"],[53,53.0,1.0,0,"F3"],[55,54.0,1.0,0,"G3"],[48,55.0,1.0,1,"C3"],[53,56.0,1.0,0,"F3"],[55,57.0,1.0,0,"G3"],[57,58.0,0.5,0,"A3"],[58,58.5,0.5,0,"B♭3"],[60,59.0,1.0,0,"C4"],[48,60.0,1.0,0,"C3"],[53,61.0,3.0,1,"F3"]]],"ly":[[0.0,"O","single"],[1.0,"Haupt","single"],[2.0,"voll","single"],[3.0,"Blut","single"],[4.0,"und","single"],[5.0,"Wun","begin"],[7.0,"den,","end"],[8.0,"voll","single"],[9.0,"Schmerz","single"],[10.0,"und","single"],[11.0,"vol","begin"],[12.0,"ler","end"],[13.0,"Hohn!","single"],[16.0,"O","single"],[17.0,"Haupt,","single"],[18.0,"zu","single"],[19.0,"Spott","single"],[20.0,"ge","begin"],[21.0,"bun","middle"],[23.0,"den","end"],[24.0,"mit","single"],[25.0,"ei","begin"],[26.0,"ner","end"],[27.0,"Dor","begin"],[28.0,"nen","middle"],[29.0,"kron!","end"],[32.0,"O","single"],[33.0,"Haupt,","single"],[34.0,"sonst","single"],[35.0,"schön","single"],[36.0,"ge","begin"],[37.0,"zie","middle"],[39.0,"ret","end"],[40.0,"mit","single"],[41.0,"höch","begin"],[42.0,"ster","end"],[43.0,"Ehr","single"],[44.0,"und","single"],[45.0,"Zier.","single"],[48.0,"jetzt","single"],[49.0,"ab","begin"],[50.0,"er","end"],[51.0,"hoch","single"],[52.0,"schim","begin"],[53.0,"pfi","middle"],[55.0,"ret:","end"],[56.0,"ge","begin"],[57.0,"grü","middle"],[58.0,"sset","end"],[59.0,"seist","single"],[60.0,"du","single"],[61.0,"mir!","single"]],"ch":[[0.0,0.5,"Dm",0],[0.5,0.5,"Dm7",1.5],[1.0,0.5,"B♭",0],[1.5,0.5,"Eø7",3.5],[2.0,1.0,"F",0],[3.0,0.5,"Gm",0],[3.5,0.5,"E°",2],[4.0,1.0,"F",0],[5.0,1.0,"Gm7",1.5],[6.0,1.0,"C",0],[7.0,1.0,"F",0],[8.0,1.0,"A",0],[9.0,0.5,"",4.5],[9.5,0.5,"",3],[10.0,0.5,"Dm",0],[10.5,0.5,"",3.0],[11.0,0.5,"",1.5],[11.5,0.5,"",0],[12.0,0.5,"A",0],[12.5,0.5,"A7",3.5],[13.0,3.0,"Dm",0],[16.0,0.5,"Dm",0],[16.5,0.5,"Dm7",1.5],[17.0,0.5,"B♭",0],[17.5,0.5,"Eø7",3.5],[18.0,1.0,"F",0],[19.0,0.5,"Gm",0],[19.5,0.5,"E°",2],[20.0,1.0,"F",0],[21.0,1.0,"Gm7",1.5],[22.0,1.0,"C",0],[23.0,1.0,"F",0],[24.0,1.0,"A",0],[25.0,0.5,"",4.5],[25.5,0.5,"",3],[26.0,0.5,"Dm",0],[26.5,0.5,"",3.0],[27.0,0.5,"",1.5],[27.5,0.5,"",0],[28.0,0.5,"A",0],[28.5,0.5,"A7",3.5],[29.0,3.0,"Dm",0],[32.0,0.5,"Dm",0],[32.5,0.5,"Dm7",1.5],[33.0,0.5,"E°",2],[33.5,0.5,"Gm",0],[34.0,0.5,"",1.5],[34.5,0.5,"F",0],[35.0,0.5,"",3.0],[35.5,0.5,"Dm7",1.5],[36.0,0.5,"E°",2],[36.5,0.5,"C7",3.5],[37.0,1.0,"B♭",0],[38.0,0.5,"F",0],[38.5,0.5,"",1.5],[39.0,1.0,"F",0],[40.0,0.5,"F",0],[40.5,0.5,"F7",3.5],[41.0,0.5,"",3],[41.5,0.5,"Gm",0],[42.0,1.0,"D7",3.5],[43.0,0.5,"Gm",0],[43.5,0.5,"",4.5],[44.0,1.0,"Gm",0],[45.0,3.0,"D",0],[48.0,1.0,"G7",3.5],[49.0,0.5,"C",0],[49.5,0.5,"",3.0],[50.0,0.5,"C",0],[50.5,0.5,"Cmaj7",3],[51.0,1.0,"F",0],[52.0,1.0,"C",0],[53.0,1.0,"Dm7",1.5],[54.0,1.0,"G",0],[55.0,1.0,"C",0],[56.0,0.5,"F",0],[56.5,0.5,"Fmaj7",3],[57.0,0.5,"Gm",0],[57.5,0.5,"E°",2],[58.0,0.5,"F",0],[58.5,0.5,"",4.5],[59.0,0.5,"",1.5],[59.5,0.25,"",3.0],[59.75,0.25,"",3.0],[60.0,0.5,"C",0],[60.5,0.5,"",0],[61.0,3.0,"F",0]],"len":64.0};
+(function(){
+const NS='http://www.w3.org/2000/svg';
+const BW=34,RH=7,PADL=40,TOP=30,LO=43,HI=79;
+const yRollEnd=TOP+(HI-LO+1)*RH, yChord=yRollEnd+16, yLyr=yRollEnd+36, tTop=yRollEnd+50, tH=44, H=tTop+tH+20;
+const LEN=D.len, W=PADL+LEN*BW+28;
+const X=b=>PADL+b*BW, Y=m=>TOP+(HI-m)*RH+RH/2;
+const svg=document.getElementById('svg');
+svg.setAttribute('width',W);svg.setAttribute('height',H);svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+
+// fermata spans and phrases
+const FS=D.v[0].filter(n=>n[3]).map(n=>[n[1],n[1]+n[2]]);
+const PH=[0,...FS.slice(0,-1).map(f=>f[1])];
+const phraseOf=b=>{let i=0;PH.forEach((s,k)=>{if(b>=s)i=k});return i+1;};
+const barOf=b=>b<1?0:Math.floor((b-1)/4)+1;
+
+// grid
+const g0=el('g',{});
+for(let b=1;b<LEN;b+=4){el('line',{x1:X(b),x2:X(b),y1:TOP-4,y2:yRollEnd,stroke:'var(--rule)','stroke-width':1},g0);}
+[48,60,72].forEach(m=>{el('line',{x1:PADL,x2:X(LEN),y1:Y(m),y2:Y(m),stroke:'var(--grid)','stroke-width':1},g0);
+  el('text',{x:6,y:Y(m)+3,'font-size':10},g0).textContent='C'+(m/12-1);});
+// tension baseline + label
+el('line',{x1:PADL,x2:X(LEN),y1:tTop+tH,y2:tTop+tH,stroke:'var(--rule)'},g0);
+el('text',{x:6,y:tTop+tH-2,'font-size':9},g0).textContent='clash';
+
+// fermatas + phrase numbers
+FS.forEach(([a,e])=>{const cx=(X(a)+X(Math.min(e,a+1)))/2;
+  el('path',{d:`M${cx-6} ${TOP-8} a6 6 0 0 1 12 0`,fill:'none',stroke:'var(--ink)','stroke-width':1.3},g0);
+  el('circle',{cx,cy:TOP-9.5,r:1.4,fill:'var(--ink)'},g0);});
+PH.forEach((s,i)=>{el('text',{x:X(s)+2,y:12,class:'pn'},g0).textContent='phrase '+(i+1);});
+el('text',{x:X(16)+2,y:22,class:'pn'},g0).textContent='(repeat, new words)';
+
+// tension strip
+const MAXT=4.5;let d=`M${X(0)} ${tTop+tH}`;
+D.ch.forEach(([o,du,,t])=>{const y=tTop+tH-(t/MAXT)*tH;d+=` L${X(o)} ${y} L${X(o+du)} ${y}`;});
+d+=` L${X(LEN)} ${tTop+tH} Z`;
+el('path',{d,fill:'var(--clash)','fill-opacity':.28,stroke:'var(--clash)','stroke-width':1.2,'stroke-linejoin':'round'});
+FS.forEach(([a])=>el('circle',{cx:X(a)+3,cy:tTop+tH,r:2.6,fill:'var(--ink)'}));
+
+// chord labels on beats
+D.ch.forEach(([o,du,s])=>{if(s&&Math.abs(o-Math.round(o))<1e-6&&du>=.5)el('text',{x:X(o)+2,y:yChord,class:'chd'}).textContent=s;});
+// lyrics
+D.ly.forEach(([o,w,syl])=>{el('text',{x:X(o)+2,y:yLyr,class:'lyr'}).textContent=w+((syl==='begin'||syl==='middle')?' -':'');});
+
+// voices: ribbons then notes
+const rects=[];const groups=[];
+[3,2,1,0].forEach(vi=>{
+  const notes=D.v[vi], col=`var(--v${vi})`, g=el('g',{class:'vg'});groups[vi]=g;
+  let p='';notes.forEach((n,i)=>{const[m,o,du]=n,y=Y(m),x0=X(o)+2,x1=X(o+du)-5;
+    if(i===0)p+=`M${x0} ${y}`;else{const pv=notes[i-1],py=Y(pv[0]),px=X(pv[1]+pv[2])-5;p+=` C${px+6} ${py} ${x0-6} ${y} ${x0} ${y}`;}
+    p+=` L${x1} ${y}`;});
+  el('path',{d:p,fill:'none',stroke:col,'stroke-width':2.2,'stroke-opacity':.45,'stroke-linecap':'round'},g);
+  notes.forEach(([m,o,du,f,name])=>{const r=el('rect',{x:X(o)+1,y:Y(m)-(RH-1)/2,width:Math.max(4,du*BW-2),height:RH-1,rx:2,fill:col,class:'note'},g);
+    el('title',{},r).textContent=['Soprano','Alto','Tenor','Bass'][vi]+' · '+name;rects.push({r,o,e:o+du});});
+});
+const ph=el('line',{x1:0,x2:0,y1:TOP-14,y2:tTop+tH+4,stroke:'var(--ink)','stroke-width':1.5});
+
+// readout
+const $=id=>document.getElementById(id);
+let lastSlice=-1;
+function readout(b){
+  let ci=0;for(let i=0;i<D.ch.length;i++){if(D.ch[i][0]<=b+1e-6)ci=i;else break;}
+  if(ci===lastSlice)return;lastSlice=ci;const c=D.ch[ci];
+  $('rc').textContent=c[2]||'passing';$('rt').textContent=c[3];
+  let w='';for(const l of D.ly){if(l[0]<=b+1e-6)w=l[1];else break;}
+  $('rw').textContent=w;$('rp').textContent=phraseOf(b);$('rb').textContent=barOf(b);
+}
+function draw(b){ph.setAttribute('transform',`translate(${X(b)} 0)`);
+  for(const n of rects)n.r.classList.toggle('on',b>=n.o&&b<n.e);readout(b);}
+
+// tempo map (fermatas held longer)
+const FERM=1.7;
+function b2u(b){let u=0,p=0;for(const[a,e]of FS){if(b<=a)break;u+=a-p;const end=Math.min(b,e);u+=(end-a)*FERM;p=end;}if(b>p)u+=b-p;return u;}
+function u2b(u){let b=0,acc=0;for(const[a,e]of FS){const seg=a-b;if(u<=acc+seg)return b+(u-acc);acc+=seg;const fs=(e-a)*FERM;if(u<=acc+fs)return a+(u-acc)/FERM;acc+=fs;b=e;}return b+(u-acc);}
+const TOTAL_U=b2u(LEN);
+
+// audio
+let ctx,wave,vg=[],nodes=[],playing=false,t0=0,u0=0,cur=0,raf=0;
+const LVL=[.17,.12,.12,.16],muted=[false,false,false,false];
+function ensure(){if(ctx)return;const AC=window.AudioContext||window.webkitAudioContext;ctx=new AC();
+  const re=new Float32Array([0,1,.55,.32,.2,.1,.06,.03]);wave=ctx.createPeriodicWave(re,new Float32Array(re.length));
+  const comp=ctx.createDynamicsCompressor();comp.connect(ctx.destination);
+  const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=3000;lp.connect(comp);
+  vg=LVL.map((l,i)=>{const g=ctx.createGain();g.gain.value=muted[i]?0:l;g.connect(lp);return g;});}
+const spb=()=>60/+$('tempo').value;
+function start(){ensure();if(ctx.state==='suspended')ctx.resume();
+  if(cur>=LEN-0.01)cur=0;const s=spb(),now=ctx.currentTime+.06;u0=b2u(cur);t0=now;nodes=[];
+  D.v.forEach((notes,vi)=>notes.forEach(([m,o,du])=>{const e=o+du;if(e<=cur+1e-6)return;
+    const ts=now+(b2u(Math.max(o,cur))-u0)*s,te=now+(b2u(e)-u0)*s;
+    const osc=ctx.createOscillator();osc.setPeriodicWave(wave);osc.frequency.value=440*Math.pow(2,(m-69)/12);
+    const g=ctx.createGain();g.gain.setValueAtTime(0,ts);g.gain.linearRampToValueAtTime(1,ts+.03);
+    g.gain.setValueAtTime(1,Math.max(ts+.031,te-.07));g.gain.linearRampToValueAtTime(0,te-.01);
+    osc.connect(g);g.connect(vg[vi]);osc.start(ts);osc.stop(te+.02);nodes.push(osc);}));
+  playing=true;setBtn();tick();}
+function halt(){if(!playing)return;playing=false;cancelAnimationFrame(raf);
+  const t=ctx.currentTime;nodes.forEach(o=>{try{o.stop(t+.03)}catch(e){}});nodes=[];setBtn();}
+function tick(){if(!playing)return;const u=u0+(ctx.currentTime-t0)/spb();
+  if(u>=TOTAL_U+.2){halt();cur=LEN;draw(LEN);return;}
+  cur=Math.max(0,Math.min(LEN,u2b(Math.max(u,u0))));draw(cur);
+  const st=$('stage');st.scrollLeft=X(cur)-st.clientWidth*.35;raf=requestAnimationFrame(tick);}
+function setBtn(){$('playlbl').textContent=playing?'Pause':'Play';$('play').setAttribute('aria-label',playing?'Pause':'Play');
+  $('ico').innerHTML=playing?'<path d="M2 1h3.5v12H2zM8.5 1H12v12H8.5z"/>':'<path d="M2 1l11 6-11 6z"/>';}
+$('play').addEventListener('click',()=>playing?halt():start());
+$('tempo').addEventListener('input',e=>{$('bpmout').textContent=e.target.value;if(playing){halt();start();}});
+[0,1,2,3].forEach(i=>$('v'+i).addEventListener('click',e=>{muted[i]=!muted[i];e.currentTarget.setAttribute('aria-pressed',String(!muted[i]));
+  groups[i].classList.toggle('off',muted[i]);if(ctx)vg[i].gain.setTargetAtTime(muted[i]?0:LVL[i],ctx.currentTime,.02);}));
+$('stage').addEventListener('click',e=>{const r=svg.getBoundingClientRect();let b=(e.clientX-r.left-PADL)/BW;
+  b=Math.max(0,Math.min(LEN-.01,b));b=Math.round(b*4)/4;const was=playing;halt();cur=b;draw(cur);if(was)start();});
+draw(0);
+})();
+</script>
+
+</body></html>
