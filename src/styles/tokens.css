@@ -1,0 +1,86 @@
+/* Brand tokens from the brief. The four voice colours are used for voices and nothing else. */
+:root {
+  color-scheme: light;
+  --paper: #eef0f3;
+  --sheet: #f7f8fa;
+  --ink: #1a1d26;
+  --ink-2: #4a5061;
+  --ink-3: #5c6273;
+  --rule: #d3d7df;
+  --rule-strong: #b5bbc7;
+  --grid: #e3e6ec;
+  --clash: #7a3b8f;
+
+  --v-s: #b4232a;
+  --v-a: #a86400;
+  --v-t: #0e7a70;
+  --v-b: #3a3ea6;
+
+  --focus: #1a1d26;
+  --shadow: 0 6px 24px rgb(26 29 38 / 0.12), 0 1px 3px rgb(26 29 38 / 0.08);
+
+  --font-display: "IM Fell English", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-lyric: "Spectral", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --radius: 6px;
+  --radius-pill: 999px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --target: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #111319;
+    --sheet: #171a21;
+    --ink: #e6e8ee;
+    --ink-2: #b4b9c6;
+    --ink-3: #8d93a3;
+    --rule: #2b2f3a;
+    --rule-strong: #3d4250;
+    --grid: #1f232c;
+    --clash: #c98be0;
+    --v-s: #f2666c;
+    --v-a: #eba43f;
+    --v-t: #3ec2b3;
+    --v-b: #9094f4;
+    --focus: #e6e8ee;
+    --shadow: 0 8px 28px rgb(0 0 0 / 0.5), 0 1px 3px rgb(0 0 0 / 0.4);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #111319;
+  --sheet: #171a21;
+  --ink: #e6e8ee;
+  --ink-2: #b4b9c6;
+  --ink-3: #8d93a3;
+  --rule: #2b2f3a;
+  --rule-strong: #3d4250;
+  --grid: #1f232c;
+  --clash: #c98be0;
+  --v-s: #f2666c;
+  --v-a: #eba43f;
+  --v-t: #3ec2b3;
+  --v-b: #9094f4;
+  --focus: #e6e8ee;
+  --shadow: 0 8px 28px rgb(0 0 0 / 0.5), 0 1px 3px rgb(0 0 0 / 0.4);
+}
+
+/* High contrast: stronger rules and secondary text. Voices also gain dash patterns on the canvas. */
+:root[data-contrast="more"] {
+  --ink-2: var(--ink);
+  --ink-3: var(--ink);
+  --rule: var(--ink-3);
+  --rule-strong: var(--ink);
+}

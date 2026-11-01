@@ -1,0 +1,39 @@
+{
+  "name": "chorale-workshop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "data": "pipeline/.venv/bin/python pipeline/build.py",
+    "test": "vitest run",
+    "test:pipeline": "cd pipeline && .venv/bin/python -m pytest -q",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/im-fell-english": "^5.3.0",
+    "@fontsource/spectral": "^5.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "verovio": "^6.4.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^6.4.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^3.2.7"
+  }
+}
