@@ -1,0 +1,18 @@
+Quartet voices - ATTRIBUTION / LICENCE
+
+These samples are derived from the Choral Singing Dataset, licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/):
+
+  Cuesta, H., Gómez, E., Martorell, A., Loáiciga, F. (2018). Choral Singing Dataset [Dataset].
+  Zenodo. https://doi.org/10.5281/zenodo.1286570
+  Paper: "Analysis of Intonation in Unison Choir Singing", Proceedings of the 15th International
+  Conference on Music Perception and Cognition (ICMPC), 2018.
+
+Sung by singers of the Anton Bruckner Choir, Barcelona. One singer per part.
+
+Changes: held notes cut from the individual close-microphone recordings of "Locus Iste",
+"Niño Dios" and "El Rossinyol", consonants trimmed, levelled, a loop crossfade baked in, folded
+to mono and encoded to AAC by pipeline/quartet.py in the Chorale Workshop repository. Pitch is
+centred in the app at playback; the recordings themselves are not retuned.
+
+No endorsement by the dataset's authors or the singers is implied.

@@ -1,0 +1,510 @@
+{
+ "version": 1,
+ "name": "Quartet",
+ "reverb": 0.3,
+ "credit": "Quartet voices from the Choral Singing Dataset (Cuesta, G\u00f3mez, Martorell, Lo\u00e1iciga 2018), sung by the Anton Bruckner Choir, Barcelona, CC BY 4.0, https://doi.org/10.5281/zenodo.1286570.",
+ "singers": {
+  "S": "1",
+  "A": "2",
+  "T": "2",
+  "B": "4"
+ },
+ "voices": {
+  "S": [
+   {
+    "url": "S/59.m4a?v=20fb26e6aa",
+    "midi": 59,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.1282,
+    "loopEnd": 0.3663
+   },
+   {
+    "url": "S/60.m4a?v=d5365631e7",
+    "midi": 60,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.2176,
+    "loopEnd": 0.6217
+   },
+   {
+    "url": "S/62.m4a?v=acdcefcebe",
+    "midi": 62,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 5.5907
+   },
+   {
+    "url": "S/64.m4a?v=326ba491a0",
+    "midi": 64,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.0946
+   },
+   {
+    "url": "S/65.m4a?v=d4a10972ff",
+    "midi": 65,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.9088
+   },
+   {
+    "url": "S/66.m4a?v=cdcaf73fe1",
+    "midi": 66,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.5938
+   },
+   {
+    "url": "S/67.m4a?v=d285a2d2e4",
+    "midi": 67,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.1194
+   },
+   {
+    "url": "S/69.m4a?v=9eca7c3e51",
+    "midi": 69,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.1309
+   },
+   {
+    "url": "S/70.m4a?v=d41d8e574f",
+    "midi": 70,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.1322,
+    "loopEnd": 0.3779
+   },
+   {
+    "url": "S/71.m4a?v=9ac6cfd73e",
+    "midi": 71,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.2541,
+    "loopEnd": 0.7262
+   },
+   {
+    "url": "S/72.m4a?v=36a5bb0d39",
+    "midi": 72,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.3864
+   },
+   {
+    "url": "S/74.m4a?v=4e5fa9936c",
+    "midi": 74,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.0497
+   },
+   {
+    "url": "S/76.m4a?v=d04b92be93",
+    "midi": 76,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.9568
+   },
+   {
+    "url": "S/77.m4a?v=16efd0187c",
+    "midi": 77,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.498,
+    "loopEnd": 1.4227
+   },
+   {
+    "url": "S/78.m4a?v=3363c3b85a",
+    "midi": 78,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.4695,
+    "loopEnd": 1.3415
+   },
+   {
+    "url": "S/79.m4a?v=7fcda15d0b",
+    "midi": 79,
+    "cents": 20.6,
+    "start": 0,
+    "loopStart": 0.1566,
+    "loopEnd": 0.4475
+   }
+  ],
+  "A": [
+   {
+    "url": "A/55.m4a?v=d0de661b9b",
+    "midi": 55,
+    "cents": 20.6,
+    "start": 0,
+    "loopStart": 0.4208,
+    "loopEnd": 1.2022
+   },
+   {
+    "url": "A/57.m4a?v=ab625aa5ad",
+    "midi": 57,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.398
+   },
+   {
+    "url": "A/58.m4a?v=26e8fb8e1b",
+    "midi": 58,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.398
+   },
+   {
+    "url": "A/59.m4a?v=c19a8f5595",
+    "midi": 59,
+    "cents": 20.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.8639
+   },
+   {
+    "url": "A/60.m4a?v=f44d17a520",
+    "midi": 60,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.2339
+   },
+   {
+    "url": "A/61.m4a?v=61344692a9",
+    "midi": 61,
+    "cents": 30.6,
+    "start": 0,
+    "loopStart": 0.4086,
+    "loopEnd": 1.1673
+   },
+   {
+    "url": "A/62.m4a?v=8a48ea6470",
+    "midi": 62,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.1178
+   },
+   {
+    "url": "A/63.m4a?v=3d1df20f18",
+    "midi": 63,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.4692
+   },
+   {
+    "url": "A/64.m4a?v=2954fe35b9",
+    "midi": 64,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.816
+   },
+   {
+    "url": "A/65.m4a?v=923ac4ef67",
+    "midi": 65,
+    "cents": 30.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.5605
+   },
+   {
+    "url": "A/66.m4a?v=40aaa951e9",
+    "midi": 66,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.5009
+   },
+   {
+    "url": "A/67.m4a?v=fe39f7cf69",
+    "midi": 67,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.6286
+   },
+   {
+    "url": "A/69.m4a?v=c24e7ba531",
+    "midi": 69,
+    "cents": 10.6,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.1077
+   },
+   {
+    "url": "A/70.m4a?v=3b90a783c8",
+    "midi": 70,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.2176,
+    "loopEnd": 0.6217
+   },
+   {
+    "url": "A/71.m4a?v=675001a129",
+    "midi": 71,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.1119,
+    "loopEnd": 0.3198
+   }
+  ],
+  "T": [
+   {
+    "url": "T/50.m4a?v=abf4574109",
+    "midi": 50,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.2826,
+    "loopEnd": 0.8074
+   },
+   {
+    "url": "T/52.m4a?v=09a6b0bc22",
+    "midi": 52,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.4576
+   },
+   {
+    "url": "T/53.m4a?v=1045995f49",
+    "midi": 53,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.4167,
+    "loopEnd": 1.1906
+   },
+   {
+    "url": "T/55.m4a?v=bc27ad0fca",
+    "midi": 55,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.8059
+   },
+   {
+    "url": "T/56.m4a?v=cd53b95211",
+    "midi": 56,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.4858,
+    "loopEnd": 1.3879
+   },
+   {
+    "url": "T/57.m4a?v=d77e2f4f68",
+    "midi": 57,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 3.35
+   },
+   {
+    "url": "T/58.m4a?v=53164a575c",
+    "midi": 58,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.8639
+   },
+   {
+    "url": "T/59.m4a?v=343750e4d1",
+    "midi": 59,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.2582,
+    "loopEnd": 0.7378
+   },
+   {
+    "url": "T/60.m4a?v=7cd6f75e23",
+    "midi": 60,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.7478
+   },
+   {
+    "url": "T/61.m4a?v=14169ef9f3",
+    "midi": 61,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.1729,
+    "loopEnd": 0.494
+   },
+   {
+    "url": "T/62.m4a?v=c8ac72c7b0",
+    "midi": 62,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.1426
+   },
+   {
+    "url": "T/63.m4a?v=1693e27b11",
+    "midi": 63,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.8988
+   },
+   {
+    "url": "T/64.m4a?v=2a62d7b2cc",
+    "midi": 64,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.1194
+   }
+  ],
+  "B": [
+   {
+    "url": "B/41.m4a?v=24209ca730",
+    "midi": 41,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.4858,
+    "loopEnd": 1.3879
+   },
+   {
+    "url": "B/42.m4a?v=38c7c48d6c",
+    "midi": 42,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.3801,
+    "loopEnd": 1.0861
+   },
+   {
+    "url": "B/43.m4a?v=599019daac",
+    "midi": 43,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 1.8523
+   },
+   {
+    "url": "B/45.m4a?v=aeb9a59cc4",
+    "midi": 45,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.372,
+    "loopEnd": 1.0629
+   },
+   {
+    "url": "B/46.m4a?v=a7df3fc638",
+    "midi": 46,
+    "cents": -14.4,
+    "start": 0,
+    "loopStart": 0.3557,
+    "loopEnd": 1.0164
+   },
+   {
+    "url": "B/47.m4a?v=dd6e363563",
+    "midi": 47,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.4695,
+    "loopEnd": 1.3415
+   },
+   {
+    "url": "B/48.m4a?v=adbd07b501",
+    "midi": 48,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.4096
+   },
+   {
+    "url": "B/50.m4a?v=a206ddfdcd",
+    "midi": 50,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.247
+   },
+   {
+    "url": "B/51.m4a?v=f11c304e4a",
+    "midi": 51,
+    "cents": 0.6,
+    "start": 0,
+    "loopStart": 0.2826,
+    "loopEnd": 0.8074
+   },
+   {
+    "url": "B/52.m4a?v=5eb2415018",
+    "midi": 52,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.4248,
+    "loopEnd": 1.2138
+   },
+   {
+    "url": "B/53.m4a?v=cb8f49961a",
+    "midi": 53,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.7927
+   },
+   {
+    "url": "B/54.m4a?v=be8e200f78",
+    "midi": 54,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.3435,
+    "loopEnd": 0.9816
+   },
+   {
+    "url": "B/55.m4a?v=3466bf6d1e",
+    "midi": 55,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.3395,
+    "loopEnd": 0.9699
+   },
+   {
+    "url": "B/57.m4a?v=081d000056",
+    "midi": 57,
+    "cents": -9.4,
+    "start": 0,
+    "loopStart": 0.1526,
+    "loopEnd": 0.4359
+   },
+   {
+    "url": "B/58.m4a?v=654a912505",
+    "midi": 58,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.189
+   },
+   {
+    "url": "B/59.m4a?v=8cbced7374",
+    "midi": 59,
+    "cents": -29.4,
+    "start": 0,
+    "loopStart": 0.2989,
+    "loopEnd": 0.8539
+   },
+   {
+    "url": "B/60.m4a?v=c9967d8f18",
+    "midi": 60,
+    "cents": -19.4,
+    "start": 0,
+    "loopStart": 0.5,
+    "loopEnd": 2.6186
+   }
+  ]
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "version": 1,
+ "name": "Choir",
+ "reverb": 0.08,
+ "vowel": "ah",
+ "credit": "Choir samples derived from VocalSet (Wilkins, Seetharaman, Wahl, Pardo 2018), CC BY 4.0, https://doi.org/10.5281/zenodo.1442513, via epic-choir by thepok.",
+ "voices": {
+  "S": [
+   {
+    "midi": 60,
+    "url": "S/ah_60.m4a?v=c36a67ae8b",
+    "start": 0.63,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 62,
+    "url": "S/ah_62.m4a?v=502bf437a6",
+    "start": 0.6,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 64,
+    "url": "S/ah_64.m4a?v=3b6f313438",
+    "start": 0.0,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 66,
+    "url": "S/ah_66.m4a?v=888f80a07d",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 68,
+    "url": "S/ah_68.m4a?v=55b583c778",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 70,
+    "url": "S/ah_70.m4a?v=ec048f8975",
+    "start": 0.03,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 72,
+    "url": "S/ah_72.m4a?v=dc7ec3c86a",
+    "start": 0.24,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 74,
+    "url": "S/ah_74.m4a?v=f7836d66c4",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 76,
+    "url": "S/ah_76.m4a?v=52265eb242",
+    "start": 0.09,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 78,
+    "url": "S/ah_78.m4a?v=d39af737cb",
+    "start": 0.18,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   }
+  ],
+  "A": [
+   {
+    "midi": 58,
+    "url": "A/ah_58.m4a?v=d839df5a6d",
+    "start": 0.48,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 60,
+    "url": "A/ah_60.m4a?v=af979daf43",
+    "start": 0.54,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 62,
+    "url": "A/ah_62.m4a?v=a734586669",
+    "start": 0.6,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 64,
+    "url": "A/ah_64.m4a?v=87d3b6b7db",
+    "start": 0.12,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 66,
+    "url": "A/ah_66.m4a?v=7f3064d109",
+    "start": 0.03,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 68,
+    "url": "A/ah_68.m4a?v=2b33959662",
+    "start": 0.03,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 70,
+    "url": "A/ah_70.m4a?v=302865571e",
+    "start": 0.03,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 72,
+    "url": "A/ah_72.m4a?v=d47f1f7d04",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 74,
+    "url": "A/ah_74.m4a?v=3fa08bbbf5",
+    "start": 0.27,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 76,
+    "url": "A/ah_76.m4a?v=36f4d4b43a",
+    "start": 0.36,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   }
+  ],
+  "T": [
+   {
+    "midi": 48,
+    "url": "T/ah_48.m4a?v=e25cb13c33",
+    "start": 0.54,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 50,
+    "url": "T/ah_50.m4a?v=5230b1bc15",
+    "start": 0.63,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 52,
+    "url": "T/ah_52.m4a?v=4272b46b0c",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 54,
+    "url": "T/ah_54.m4a?v=875eeacf39",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 56,
+    "url": "T/ah_56.m4a?v=6a4b860888",
+    "start": 0.12,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 58,
+    "url": "T/ah_58.m4a?v=a71869f36a",
+    "start": 0.3,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 60,
+    "url": "T/ah_60.m4a?v=57d18861d3",
+    "start": 0.33,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 62,
+    "url": "T/ah_62.m4a?v=62b623fb5e",
+    "start": 0.18,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 64,
+    "url": "T/ah_64.m4a?v=b33897742b",
+    "start": 0.6,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 66,
+    "url": "T/ah_66.m4a?v=562e8405cf",
+    "start": 0.39,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   }
+  ],
+  "B": [
+   {
+    "midi": 46,
+    "url": "B/ah_46.m4a?v=9cce20689d",
+    "start": 0.57,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 48,
+    "url": "B/ah_48.m4a?v=e05232facb",
+    "start": 0.51,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 50,
+    "url": "B/ah_50.m4a?v=89198fee32",
+    "start": 0.54,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 52,
+    "url": "B/ah_52.m4a?v=580b46e73d",
+    "start": 0.06,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 54,
+    "url": "B/ah_54.m4a?v=ee3980468b",
+    "start": 0.09,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 56,
+    "url": "B/ah_56.m4a?v=d0cc3c9814",
+    "start": 0.09,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 58,
+    "url": "B/ah_58.m4a?v=1dad55c038",
+    "start": 0.27,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 60,
+    "url": "B/ah_60.m4a?v=1e63a02f77",
+    "start": 0.39,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 62,
+    "url": "B/ah_62.m4a?v=12bd26455b",
+    "start": 0.18,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   },
+   {
+    "midi": 64,
+    "url": "B/ah_64.m4a?v=82556f7c0d",
+    "start": 0.51,
+    "loopStart": 1.2,
+    "loopEnd": 4.2
+   }
+  ]
+ }
+}
